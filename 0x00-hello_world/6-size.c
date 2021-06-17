@@ -2,7 +2,7 @@
 
 /**
  * main - prints sizes of different data types
- * Return: returns 0 if the function proceeds with out syntax and runtime errors
+ * Return: returns 0 if the function proceeds with out syntax errors
  */
 int main(void)
 {
@@ -15,7 +15,8 @@ int main(void)
 	printf("Size of a char: %zu byte(s)\n", sizeof(charType));
 	printf("Size of an int: %zu byte(s)\n", sizeof(intType));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(longintType));
-	printf("Size of a long long int: %zu byte(s)\n", sizeof(longlongintType));
+	printf("Size of a long long int: %zu byte(s)\n", +
+	       sizeof(longlongintType));
 	printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
 	return (0);
 }
