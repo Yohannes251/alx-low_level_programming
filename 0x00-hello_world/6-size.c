@@ -3,6 +3,7 @@
 /**
  * main - prints sizes of different data types
  * Return: returns 0 if the function proceeds with out syntax and runtime errors
+ */
 int main(void)
 {
 	char charType;
