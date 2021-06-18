@@ -8,6 +8,7 @@
 int main(void)
 {
 	int x;
+
 	for (x = 'A'; x <= 'z'; x++)
 	{
 		x = tolower(x);
