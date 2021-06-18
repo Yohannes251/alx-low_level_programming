@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * main - function prints the alphabet in lower case
+ * main - function prints lowercase alphabets except e and q
  * Return: returns 0 if the function runs smoothly
  */
 int main(void)
