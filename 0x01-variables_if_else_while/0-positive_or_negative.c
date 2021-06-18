@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - function dictates whether a number is +ve,-ve or 0
@@ -11,7 +12,7 @@ int main(void)
 	n = rand();
 	if (n > 0)
 		printf("%d is positive\n", n);
-	elif (n < 0)
+	else if (n < 0)
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
