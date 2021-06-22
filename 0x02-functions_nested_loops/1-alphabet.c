@@ -3,7 +3,7 @@
  * main - prints alphabet in lower case
  * Return: Returns 0 upon success
  */
-int main(void)
+void print_alphabet(void)
 {
 	int x;
 
@@ -12,5 +12,4 @@ int main(void)
 		_putchar(x);
 	}
 	_putchar('\n');
-	return (0);
 }
