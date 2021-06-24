@@ -13,6 +13,7 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
+		{
 		if ((i % 3 == 0) && (i % 5 == 0))
 		{
 			printf("FizzBuzz");
@@ -29,7 +30,11 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		printf(" ");
+		}
+		if (i < 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
