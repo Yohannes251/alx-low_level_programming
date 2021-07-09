@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _isdigit - checks if character is a digit
+ * _isdigitt - checks if character is a digit
  * @s: the character to check
  *
  * Return: 1 if digit, 0 otherwise
  */
-int _isdigit(char s)
+int _isdigitt(char s)
 {
 	return (s >= '0' && s <= '9');
 }
@@ -28,9 +28,9 @@ int _atoi(char *s)
 		{
 			neg++;
 		}
-		else if (_isdigit(s[i]))
+		else if (_isdigitt(s[i]))
 		{
-			while (_isdigit(s[i]))
+			while (_isdigitt(s[i]))
 			{
 				d = (s[i] - '0');
 				d = neg % 2 ? -d : d;
