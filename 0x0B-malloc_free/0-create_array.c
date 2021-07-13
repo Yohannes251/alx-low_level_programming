@@ -6,7 +6,7 @@
  * create_array - creates an array of chars
  * @size: size of array
  * @c: special character
- * Return: Returns 0
+ * Return: Returns pointer to an array
  */
 
 char *create_array(unsigned int size, char c)
@@ -15,12 +15,12 @@ char *create_array(unsigned int size, char c)
 	char *str;
 
 	str = malloc(sizeof(char) * size);
-	str[0] = c;
+
 	if (size == 0 || str == 0)
 	{
 		return ('\0');
 	}
-	else if (size > 0)
+	if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{
