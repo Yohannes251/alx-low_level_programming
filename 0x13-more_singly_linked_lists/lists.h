@@ -2,6 +2,7 @@
 #define LISTS_H
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdarg.h>
 
 /**
  * struct listint_s - singly linked list
@@ -28,5 +29,9 @@ void free_listint2(listint_t **head);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 int pop_listint(listint_t **head);
 int sum_listint(listint_t *head);
+listint_t *reverse_listint(listint_t **head);
+size_t print_listint_safe(const listint_t *head);
+size_t free_listint_safe(listint_t **h);
+listint_t *find_listint_loop(listint_t *head);
 
 #endif /* LISTS_H */
