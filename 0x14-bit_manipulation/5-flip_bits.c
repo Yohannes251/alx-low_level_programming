@@ -9,6 +9,7 @@
 int countSetBits(unsigned long int n)
 {
 	unsigned long int count = 0;
+
 	while (n > 0)
 	{
 		count++;
