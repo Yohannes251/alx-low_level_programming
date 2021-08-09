@@ -1,4 +1,5 @@
 #include "main.h"
+#include "holberton.h"
 /**
  * _strlen - check the code for Holberton School students.
  * @s: integer1
