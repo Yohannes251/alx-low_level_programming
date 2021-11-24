@@ -18,7 +18,8 @@ def island_perimeter(grid):
         counter = nested_list.count(1)
         if counter == 1:
             height += 1
-            width = 1
+            if width < 1:
+                width = 1
         elif counter > 1:
             height += 1
             width = counter
