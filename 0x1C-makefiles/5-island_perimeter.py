@@ -17,5 +17,10 @@ def island_perimeter(grid):
         for cell in nested_list:
             if cell == 1:
                 cells += 1
-    perimeter = ((cells - 2) * 2) + 2 * 3
-    return perimeter
+    if cells == 0:
+        return 0
+    elif cells <= 100:
+        perimeter = (cells * 2) + 2
+        return perimeter
+    else:
+        return
